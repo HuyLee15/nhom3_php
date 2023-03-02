@@ -165,12 +165,12 @@ class PageController extends Controller
 
        
         
-        Mail::send('mail', $data, function ($message) use ($request){
-            $message->from('ganhteam01@gmail.com');
+        // Mail::send('mail', $data, function ($message) use ($request){
+        //     $message->from('ganhteam01@gmail.com');
             
-            $message->to($request->email,$request->name )->subject('Cảm ơn bạn đã liên hệ, chúng tôi sẽ trả lời bạn sớm nhất có thể!');
+        //     $message->to($request->email,$request->name )->subject('Cảm ơn bạn đã liên hệ, chúng tôi sẽ trả lời bạn sớm nhất có thể!');
             
-        });
+        // });
 
         $contact->name = $request->name;
         $contact->email = $request->email;
