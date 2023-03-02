@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 17, 2022 lúc 03:01 PM
+-- Thời gian đã tạo: Th3 02, 2023 lúc 04:07 PM
 -- Phiên bản máy phục vụ: 10.4.27-MariaDB
 -- Phiên bản PHP: 7.4.33
 
@@ -187,9 +187,10 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`id`, `name`, `email`, `messages`, `created_at`, `updated_at`) VALUES
-(1, 'Nguyễn Khuyến', 'nguyenkhuyen0006@gmail.com', 'Shop chất lượng!', '2020-12-18 09:31:33', '2020-12-18 09:31:33'),
-(2, 'Phương Hà', 'mp753114@gmail.com', 'oke la', '2020-12-25 15:49:58', '2020-12-25 15:49:58'),
-(3, 'Hà Minh Phương', 'mp753114@gmail.com', 'ădawdasd', '2020-12-26 03:51:27', '2020-12-26 03:51:27');
+(1, 'Felix', 'nguyenkhuyen0006@gmail.com', 'Shop chất lượng!', '2020-12-18 09:31:33', '2020-12-18 09:31:33'),
+(2, 'Developer', 'mp753114@gmail.com', 'oke la', '2020-12-25 15:49:58', '2020-12-25 15:49:58'),
+(3, 'Tuấn Điệp', 'mp753114@gmail.com', 'ădawdasd', '2020-12-26 03:51:27', '2020-12-26 03:51:27'),
+(4, 'Bích Thảo', 'huyle150702@gmail.com', 'demo', '2023-03-02 15:05:23', '2023-03-02 15:05:23');
 
 -- --------------------------------------------------------
 
@@ -423,9 +424,9 @@ CREATE TABLE `our_team` (
 --
 
 INSERT INTO `our_team` (`id`, `image`, `name`, `position`, `introduce`, `created_at`, `updated_at`) VALUES
-(1, '9G3V_about_avatar_1.jpg', 'SARA BETHEL', 'Chef', '<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat</p>', '2020-12-10 05:38:00', '2020-12-10 05:38:00'),
-(2, 'LPWA_about_avatar_2.jpg', 'ODIO PROCIA', 'CEO/Founder', '<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat</p>', '2020-12-21 17:05:33', '2020-12-22 15:54:28'),
-(3, '2clm_about_avatar_3.jpg', 'BANICA TINCIDUNT', 'Chef', '<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat</p>', '2020-12-21 17:06:24', '2020-12-21 17:06:24');
+(1, '9G3V_about_avatar_1.jpg', 'Felix Lee', 'Giám đốc', '<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat</p>', '2020-12-10 05:38:00', '2020-12-10 05:38:00'),
+(2, 'LPWA_about_avatar_2.jpg', 'Bích Thảo', 'Phó giám đốc', '<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat</p>', '2020-12-21 17:05:33', '2020-12-22 15:54:28'),
+(3, '2clm_about_avatar_3.jpg', 'Tuấn Điệp', 'Phó giám đốc', '<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat</p>', '2020-12-21 17:06:24', '2020-12-21 17:06:24');
 
 -- --------------------------------------------------------
 
@@ -643,11 +644,11 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `image`, `name`, `email`, `password`, `SDT`, `address`, `gender`, `token`, `email_verified_at`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'zkx9_face13.jpg', 'Nhóm 7', 'mp753114@gmail.com', '$2y$10$SkO2qfEPgdiEEk44RoIVpeI/tuewmURrLy6PYiMaQf2Dxf3m4zxte', '0866006520', 'Cẩm Văn Cẩm Giàng Hải Dương', 'nam', 1, NULL, NULL, NULL, '2020-12-21 17:11:28'),
-(2, 'ZEIL_face3.jpg', 'Trần Trọng ', 'mp753115@gmail.com', '$2y$10$SkO2qfEPgdiEEk44RoIVpeI/tuewmURrLy6PYiMaQf2Dxf3m4zxte', '0888062201', 'Cẩm Văn Cẩm Giàng', 'nam', 0, NULL, NULL, NULL, '2020-12-06 08:45:25'),
-(3, 'y51r_face21.jpg', 'Trọng Trần', 'mp753116@gmail.com', '$2y$10$SkO2qfEPgdiEEk44RoIVpeI/tuewmURrLy6PYiMaQf2Dxf3m4zxte', '0866006523', 'Cẩm Văn - Cẩm Giàng', 'nam', 0, NULL, NULL, '2020-12-03 18:28:56', '2020-12-14 02:04:43'),
-(4, NULL, 'Tùng', 'mp753117@gmail.com', '$2y$10$SkO2qfEPgdiEEk44RoIVpeI/tuewmURrLy6PYiMaQf2Dxf3m4zxte', NULL, NULL, NULL, 0, NULL, NULL, '2020-12-16 16:05:43', '2020-12-16 16:05:43'),
-(5, 'Likr_about_avatar_2.jpg', 'Quỳnh', 'mp753118@gmail.com', '$2y$10$SkO2qfEPgdiEEk44RoIVpeI/tuewmURrLy6PYiMaQf2Dxf3m4zxte', '0866006520', 'Cẩm Văn Cẩm Giàng', 'nam', 0, NULL, NULL, '2020-12-26 03:44:22', '2020-12-26 03:45:14'),
+(1, 'zkx9_face13.jpg', 'Nhóm 3', 'mp753114@gmail.com', '$2y$10$SkO2qfEPgdiEEk44RoIVpeI/tuewmURrLy6PYiMaQf2Dxf3m4zxte', '0866006520', 'Cẩm Văn Cẩm Giàng Hải Dương', 'nam', 1, NULL, NULL, NULL, '2020-12-21 17:11:28'),
+(2, 'ZEIL_face3.jpg', 'Lê Huy', 'mp753115@gmail.com', '$2y$10$SkO2qfEPgdiEEk44RoIVpeI/tuewmURrLy6PYiMaQf2Dxf3m4zxte', '0888062201', 'Cẩm Văn Cẩm Giàng', 'nam', 0, NULL, NULL, NULL, '2020-12-06 08:45:25'),
+(3, 'y51r_face21.jpg', 'Bích Thảo', 'mp753116@gmail.com', '$2y$10$SkO2qfEPgdiEEk44RoIVpeI/tuewmURrLy6PYiMaQf2Dxf3m4zxte', '0866006523', 'Cẩm Văn - Cẩm Giàng', 'nam', 0, NULL, NULL, '2020-12-03 18:28:56', '2020-12-14 02:04:43'),
+(4, NULL, 'Tuấn Điệp', 'mp753117@gmail.com', '$2y$10$SkO2qfEPgdiEEk44RoIVpeI/tuewmURrLy6PYiMaQf2Dxf3m4zxte', NULL, NULL, NULL, 0, NULL, NULL, '2020-12-16 16:05:43', '2020-12-16 16:05:43'),
+(5, 'Likr_about_avatar_2.jpg', 'Felix', 'mp753118@gmail.com', '$2y$10$SkO2qfEPgdiEEk44RoIVpeI/tuewmURrLy6PYiMaQf2Dxf3m4zxte', '0866006520', 'Cẩm Văn Cẩm Giàng', 'nam', 0, NULL, NULL, '2020-12-26 03:44:22', '2020-12-26 03:45:14'),
 (6, NULL, 'Huy Lee', 'mp753119@gmail.com', '$2y$10$SkO2qfEPgdiEEk44RoIVpeI/tuewmURrLy6PYiMaQf2Dxf3m4zxte', NULL, NULL, NULL, 0, NULL, NULL, '2021-01-27 13:08:11', '2021-01-27 13:08:11');
 
 --
@@ -823,7 +824,7 @@ ALTER TABLE `comment_blogs`
 -- AUTO_INCREMENT cho bảng `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT cho bảng `contact_info`
